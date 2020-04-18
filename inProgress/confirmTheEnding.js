@@ -6,7 +6,16 @@ Check if a string (first argument, str) ends with the given target string (secon
 
 
 function confirmEnding(str, target) {
-    return str;
+
+    if (str.substr(-target.length) === target){
+      console.log(str.substr(-target.length));
+      
+      return true;
+    }
+    else {
+      return false;
+    }
+    
   }
   
   confirmEnding("Bastian", "n");
