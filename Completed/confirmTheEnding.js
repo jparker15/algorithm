@@ -6,10 +6,21 @@ Check if a string (first argument, str) ends with the given target string (secon
 
 
 function confirmEnding(str, target) {
-    return str;
+  
+      console.log(str.substring(str.length - target.length));
+      
+    if (str.substring(str.length - target.length)===target){
+      return console.log(true)// true;
+       
+    }
+    else {
+      return console.log(false)// false;
+    }
+
+    
   }
   
-  confirmEnding("Bastian", "n");
+  confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain")
   
 
   /**       TEST CASES
