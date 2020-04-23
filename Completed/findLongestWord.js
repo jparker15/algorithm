@@ -7,21 +7,21 @@ Your response should be a number.
 
 function findLongestWordLength(str) {
     
-  let words = str.split(" ");
+  let words = str.split(" "),
     //console.log(words);
+      longestWord = "";
+  
+        for(let word of words){
+          if (word.length > longestWord.length){
+            longestWord = word;
+          }
+          
+          
+        }
 
-    for (let i = 0; i < words.length; i++) {
-      //console.log(words[i],i);
-      let longestWord = []
-      
-      if (words[i].length > longestWord){
-        longestWord.push(words[i])
+        // console.log(longestWord);
+        return longestWord;
         
-      }
-
-      console.log(longestWord);
-    }
-
     
 
 
