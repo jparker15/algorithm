@@ -3,7 +3,16 @@
 
 
 function truncateString(str, num) {
-    return str;
+
+    let words = str.split(" ")
+
+    for (let i = 0; i < str.length; i++) {
+      console.log(words);
+      
+      
+    }
+     //console.log(str);
+     
   }
   
   truncateString("A-tisket a-tasket A green and yellow basket", 8);
