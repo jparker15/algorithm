@@ -7,7 +7,7 @@ Boolean primitives are true and false.} bool
 
 
 function booWho(bool) {
-
+      //parameter is strictly equal to a boolean primitive return bool prim 
    if (bool === true){
       return true
    }
@@ -15,7 +15,7 @@ function booWho(bool) {
       return false
    }
    else {
-      return bool;
+      return false; 
    }
     
   }
