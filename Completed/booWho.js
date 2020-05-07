@@ -7,7 +7,17 @@ Boolean primitives are true and false.} bool
 
 
 function booWho(bool) {
-    return bool;
+
+   if (bool === true){
+      return true
+   }
+   else if (bool === false ){
+      return false
+   }
+   else {
+      return bool;
+   }
+    
   }
   
   booWho(null);
