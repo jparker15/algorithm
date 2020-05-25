@@ -16,24 +16,23 @@ Likewise, getIndexToIns([20,3,5], 19)
 
 
 function getIndexToIns(arr, num) {
-  
+    //sort array in accessending order(smallest to largest)
     arr.sort((a,b) => a-b);
-  
+      // itterate through given array
     for (let i = 0; i < arr.length; i++) {
-      
-      if (arr[i] <= num){
-        console.log(i);
+      // if element at i is greater or equal to param num return that index
+      if (arr[i] >= num){
+
+        return i;
         
       }
-      // else if (arr[i] < num){
-
-      // }
-      
     }
-    return num;
+
+    // else return array length 
+    return arr.length;
   }
   
-  getIndexToIns([2, 5, 10], 15);
+  getIndexToIns([], 1);
   
 
  /**TEST CASES
