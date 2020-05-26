@@ -15,10 +15,19 @@ all of the letters in "line" are present in "Alien".
 
  
 function mutation(arr) {
+    console.log(arr);
+    
+   if(arr[0].length != arr[1].length){
+     return false
+     
+   }
+   else  return true
+    
+
     return arr;
   }
   
-  mutation(["hello", "hey"]);
+  mutation(["hello", "Hello"]);
   
 
 
