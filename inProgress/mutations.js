@@ -21,12 +21,21 @@ function mutation(arr) {
 
     for(let i = 0; i < arr[0].length;i++){
        // if arr element 0 includes characters from element 1 return true
-      if(arr[0].includes(arr[1].split("")[i])){
-        console.log(true);
+      if(arr[0].includes(arr[1].split("")[i]) || arr[0].includes(arr[1].split("")[i].toUpperCase())){
+
+        console.log("match");
+        
+
+      }
+      else if(i = arr[0].length - 1) {
+        console.log("end of loop");
         
       }
       else{
+
         console.log(false);
+        
+        return false
          
       }
 
@@ -38,7 +47,7 @@ function mutation(arr) {
     
   }
   
-  mutation(["hello", "hey"]);
+  mutation(["hello", "Hello"]);
   
 
 
