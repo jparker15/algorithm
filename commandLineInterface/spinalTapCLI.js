@@ -8,12 +8,6 @@ const readline = require("readline"),
 
     });
 
-    
-    let regexTest = /\s/g;
-
-            
-
-    console.log(regexTest);
 
     // Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 
@@ -23,8 +17,9 @@ const readline = require("readline"),
         rl.question("Enter a string and it will return in spinal case\n",(string) =>{
             // changes all entries to lowercase
             string = string.toLowerCase();
-
-            let regexTest = /\s/g;
+            // use regular expression to check for underscores, spaces and replace them with hypens
+            
+            string = string.replace();
 
             
 
