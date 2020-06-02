@@ -13,41 +13,53 @@ Lastly, ["Alien", "line"], should return true because
 all of the letters in "line" are present in "Alien".
  */
 
- 
-function mutation(arr) {
-    //console.log(arr);
+function mutation (arr) {
+  const word1 = arr[0];
+  const word2 = arr[1];
+
+  for(let i = 0; i < word2.length; i++){
+    console.log(word1[i]);
     
-    let demo = arr[1].split("");
+  }
 
-    for(let i = 0; i < arr[0].length;i++){
-       // if arr element 0 includes characters from element 1 return true
-      if(arr[0].includes(arr[1].split("")[i]) || arr[0].includes(arr[1].split("")[i].toUpperCase())){
+}
 
-        console.log("match");
+mutation([])
+ 
+// function mutation(arr) {
+//     //console.log(arr);
+    
+//     let demo = arr[1].split("");
+
+//     for(let i = 0; i < arr[0].length;i++){
+//        // if arr element 0 includes characters from element 1 return true
+//       if(arr[0].includes(arr[1].split("")[i]) || arr[0].includes(arr[1].split("")[i].toUpperCase())){
+
+//         console.log("match");
         
 
-      }
-      else if(i = arr[0].length - 1) {
-        console.log("end of loop");
+//       }
+//       else if(i = arr[0].length - 1) {
+//         console.log("end of loop");
         
-      }
-      else{
+//       }
+//       else{
 
-        console.log(false);
+//         console.log(false);
         
-        return false
+//         return false
          
-      }
+//       }
 
-    }
+//     }
 
  
    
 
     
-  }
+//   }
   
-  mutation(["hello", "Hello"]);
+//   mutation(["hello", "Hello"]);
   
 
 
