@@ -15,16 +15,22 @@ all of the letters in "line" are present in "Alien".
 
 function mutation (arr) {
   const word1 = arr[0];
-  const word2 = arr[1];
+  const word2 = arr[1].toLowerCase();
 
   for(let i = 0; i < word2.length; i++){
-    console.log(word1[i]);
     
+    let demo = word1.indexOf(word2[i]);
+
+    if(demo == -1){
+      console.log("Does not exist");
+      
+    }
+
   }
 
 }
 
-mutation([])
+mutation(["hello","Hello"])
  
 // function mutation(arr) {
 //     //console.log(arr);
