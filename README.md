@@ -1,2 +1,8 @@
-Al Gore Rythms
-a folder of various Algorithms I have completed
+A repo containing algorithms
+
+Completed
+In Progress
+Command Line Interface Algorithms - 
+Folder containing algorithms with a readline interface to allow inputs
+
+
