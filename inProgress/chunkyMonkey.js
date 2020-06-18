@@ -5,10 +5,21 @@
  */
 
 function chunkArrayInGroups(arr, size) {
-    return arr;
+    //console.log(arr,size);
+
+    const demo = arr.slice(0,size);
+    const demo2 = arr.slice(size);
+    //console.log(demo,demo2);
+
+    const chunky = [demo,demo2];
+    console.log(chunky);
+    
+    return chunky
+    
+    
   }
   
-  chunkArrayInGroups(["a", "b", "c", "d"], 2);
+  chunkArrayInGroups([1,2,3,4,5], 2);
   
 
  /**
