@@ -14,23 +14,44 @@ all of the letters in "line" are present in "Alien".
  */
 
 function mutation (arr) {
-  const word1 = arr[0];
+        //first word of arguement
+  const word1 = arr[0].toLowerCase();
   const word2 = arr[1].toLowerCase();
 
   for(let i = 0; i < word2.length; i++){
     
-    let demo = word1.indexOf(word2[i]);
+    let letter  = word1.indexOf(word2[i]);
 
-    if(demo == -1){
+    console.log(letter,word2[i]);
+    
+
+    if(letter == -1){
       console.log("Does not exist");
-      
+      return false;
     }
 
   }
+    return true 
 
 }
 
-mutation(["hello","Hello"])
+mutation(["hello","hey"])
+
+ //TEST Cases
+ /**
+  * mutation(["hello", "hey"]) should return false.
+mutation(["hello", "Hello"]) should return true.
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) should return true.
+mutation(["Mary", "Army"]) should return true.
+mutation(["Mary", "Aarmy"]) should return true.
+mutation(["Alien", "line"]) should return true.
+mutation(["floor", "for"]) should return true.
+mutation(["hello", "neo"]) should return false.
+mutation(["voodoo", "no"]) should return false.
+mutation(["ate", "date"] should return false.
+mutation(["Tiger", "Zebra"]) should return false.
+mutation(["Noel", "Ole"]) should return true.
+  */
  
 // function mutation(arr) {
 //     //console.log(arr);
@@ -69,18 +90,3 @@ mutation(["hello","Hello"])
   
 
 
- //TEST Cases
- /**
-  * mutation(["hello", "hey"]) should return false.
-mutation(["hello", "Hello"]) should return true.
-mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) should return true.
-mutation(["Mary", "Army"]) should return true.
-mutation(["Mary", "Aarmy"]) should return true.
-mutation(["Alien", "line"]) should return true.
-mutation(["floor", "for"]) should return true.
-mutation(["hello", "neo"]) should return false.
-mutation(["voodoo", "no"]) should return false.
-mutation(["ate", "date"] should return false.
-mutation(["Tiger", "Zebra"]) should return false.
-mutation(["Noel", "Ole"]) should return true.
-  */
