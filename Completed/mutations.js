@@ -14,10 +14,10 @@ all of the letters in "line" are present in "Alien".
  */
 
 function mutation (arr) {
-        //first word of arguement
+        // words of arguement set to lowercase
   const word1 = arr[0].toLowerCase();
   const word2 = arr[1].toLowerCase();
-
+              //loop through word2 to test indexOf word1 at each letter of word2
   for(let i = 0; i < word2.length; i++){
     
     let letter  = word1.indexOf(word2[i]);
