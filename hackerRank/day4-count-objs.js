@@ -5,19 +5,19 @@
  * objects: an array of objects with integer properties 'x' and 'y'
  */
 function getCount(objects) {
-    //console.log(objects);
-    let count = 0;
-    for (let i = 0; i < objects.length; i++) {
-    //    console.log(objects[i].x,objects[i].y);
-        
-        if(objects[i].x != objects[i].y){
-            
+    // console.log(objects);
+    let count = 0
+    for (const it of objects) {
+        console.log(it.x,it.y);
+
+        if(it.x == it.y){
             count++
             
         }
         
     }
-    console.log(count,count.length);
+    return console.log(count);
+    
 }
 
 getCount(
