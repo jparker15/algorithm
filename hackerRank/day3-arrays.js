@@ -5,29 +5,26 @@
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    let demo = 0,
+    let max = 0,
         second = 0;
+        //console.log(nums);
+    for (let i = 0; i <  nums.length; i++) {
 
-    for (let i = 0; i < nums.length; i++) {
-        // console.log(nums[i]);
-        if (nums[i] > demo){
-            demo = nums[i];
-           
+       // console.log(nums[i]);
+        if(nums[i]>max){
+            max = nums[i]
         }
-        if (demo > nums[i]){
-            second = nums[i]
+        if (max == second && nums[i] < max ){
+            second = nums[i];
         }
-        
-        
+        console.log(max,nums[i]);
         
     }
-    console.log(demo);
+    
+    console.log(max);
     console.log(second);
-   
     
 
-
-    
 
 }
 
