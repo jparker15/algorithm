@@ -7,6 +7,9 @@ function getSecondLargest(nums) {
     // Complete the function
     let max = 0,
         second = 0;
+        nums.sort((a,b) =>{
+            return a-b
+        })
         //console.log(nums);
     for (let i = 0; i <  nums.length; i++) {
 
@@ -14,11 +17,11 @@ function getSecondLargest(nums) {
         if(nums[i]>max){
             max = nums[i]
         }
-        if (max == second && nums[i] < max ){
-            second = nums[i];
+        if(nums[i-1 ] < max){
+            second = nums[i-1]
         }
-        console.log(max,nums[i]);
-        
+      
+        // console.log(max,nums[i]);
     }
     
     console.log(max);
