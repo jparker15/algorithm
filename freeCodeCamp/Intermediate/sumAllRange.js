@@ -6,10 +6,23 @@ For example, sumAll([4,1]) should return 10 because sum of all the numbers betwe
  */
 
 function sumAll(arr) {
-    return 1;
+    arr.sort((a,b)=> a-b)
+    console.log(arr);
+    let sum = 0;
+
+    for (let i = arr[0]; i <= arr[1]; i++) {
+      
+      sum += i;
+      
+    }
+    console.log(sum);
+
+
+
+    
   }
   
-  sumAll([1, 4]);
+  sumAll([10, 5]);
   
   /**sumAll([1, 4]) should return a number.
 sumAll([1, 4]) should return 10.
