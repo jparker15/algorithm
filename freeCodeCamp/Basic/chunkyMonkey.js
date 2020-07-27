@@ -5,21 +5,28 @@
  */
 
 function chunkArrayInGroups(arr, size) {
-    //console.log(arr,size);
+  
+ // console.log(arr,size); 
+    const len = arr.length; 
+    const chunk = [];
+  
+  for (let i = 0; i < len; i++) {
 
-    const demo = arr.slice(0,size);
-    const demo2 = arr.slice(size);
-    //console.log(demo,demo2);
-
-    const chunky = [demo,demo2];
-    console.log(chunky);
-    
-    return chunky
-    
+    chunk.push(arr.splice(0,size));
+    if(arr.length < 1){
+      return console.log(chunk);
+    }
     
   }
+  console.log(chunk);
   
-  chunkArrayInGroups([1,2,3,4,5], 2);
+  
+  
+
+  
+  }
+  
+  chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2);
   
 
  /**
