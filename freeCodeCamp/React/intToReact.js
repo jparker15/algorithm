@@ -11,7 +11,27 @@ React combines HTML with JavaScript functionality to create its own markup langu
   */
     const JSX = <h1>Hello JSX!</h1>
 
-    
+/**
+ * Create a complex JSX Element
+ */
+
+    const JSX = 
+
+    <div>
+
+        <h1> First Elem</h1>
+
+        <p>2nd elem</p>
+
+        <ul> List of Items
+            <li>li1</li>
+            <li>li2</li>
+            <li>li3</li>
+        </ul>
+
+    </div>;
+
+
  
  
  
