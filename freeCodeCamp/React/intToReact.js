@@ -5,4 +5,13 @@ React combines HTML with JavaScript functionality to create its own markup langu
  This section will introduce you to all of these concepts and how to implement them for use with your own projects.
  */
 
+
+ /**
+    Create a simple JSX Element
+  */
+    const JSX = <h1>Hello JSX!</h1>
+
+    
+ 
+ 
  
