@@ -11,6 +11,8 @@ function largestOfFour(arr) {
 
     let demo = [0,0,0,0];
 
+    let omed = [];
+
     for (let i = 0; i < arr.length; i++) {
         // console.log(arr[i]);
         // console.log(demo[i]);
@@ -22,17 +24,23 @@ function largestOfFour(arr) {
 
             //    console.log(arr[i][j]);
                demo[i] = arr[i][j]
+            }
+            if(arr[i][j] < 0){
+                
+                omed.push(-Math.abs(arr[i][j]));
+                omed.sort((a,b)=>b-a)
+                console.log(omed);
 
             }
             else {
-               console.log(arr[i][j]);
+            //    console.log(arr[i][j]);
             }
             
         }
     }
 
     
-    // console.log(arr,demo);
+    console.log(demo);
 
 }
   
