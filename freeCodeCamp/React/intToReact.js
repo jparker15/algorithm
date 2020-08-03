@@ -82,7 +82,13 @@ const JSX = (
   );
 
 /**
- * 
+ *  Statless Functional Component Creation
  */
+
+const MyComponent = function() {
+    return(
+        <div>stringoftext</div>
+    )
+}
   
   
