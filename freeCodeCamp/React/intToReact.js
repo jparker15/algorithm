@@ -57,3 +57,13 @@ React combines HTML with JavaScript functionality to create its own markup langu
     // change code below this line
     ReactDOM.render(JSX,document.getElementById("challenge-node"));
 
+/**
+ *  Define a HTML Class
+ */
+
+    const JSX = (
+        <div className="myDiv">
+        <h1>Add a class to this div</h1>
+        </div>
+    );
+  
