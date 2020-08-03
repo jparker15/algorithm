@@ -9,13 +9,13 @@ React combines HTML with JavaScript functionality to create its own markup langu
  /**
     Create a simple JSX Element
   */
-    const JSX = <h1>Hello JSX!</h1>
+const JSX = <h1>Hello JSX!</h1>
 
 /**
  * Create a complex JSX Element
  */
 
-    const JSX = 
+const JSX = 
 
     <div>
 
@@ -37,7 +37,7 @@ React combines HTML with JavaScript functionality to create its own markup langu
  * Add comments in JSX
  */
 
-    const JSX = (
+const JSX = (
         <div>
         <h1>This is a block of JSX</h1>
         <p>Here's a subtitle</p>
@@ -48,7 +48,7 @@ React combines HTML with JavaScript functionality to create its own markup langu
 /**
  * Render HTML elems to the DOM
  */
-    const JSX = (
+const JSX = (
         <div>
         <h1>Hello World</h1>
         <p>Lets render this to the DOM</p>
@@ -61,7 +61,7 @@ React combines HTML with JavaScript functionality to create its own markup langu
  *  Define a HTML Class
  */
 
-    const JSX = (
+const JSX = (
         <div className="myDiv">
         <h1>Add a class to this div</h1>
         </div>
@@ -91,4 +91,25 @@ const MyComponent = function() {
     )
 }
   
+/**
+ * React Component Creation
+ */
+
+class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      // change code below this line
+  
+    const JSX =  <div>
+      <h1>Hello React!</h1>
+      </div>
+  
+      return JSX
+  
+  
+      // change code above this line
+    }
+  };
   
