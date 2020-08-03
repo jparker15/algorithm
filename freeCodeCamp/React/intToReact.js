@@ -33,5 +33,15 @@ React combines HTML with JavaScript functionality to create its own markup langu
 
 
  
- 
- 
+/**
+ * Add comments in JSX
+ */
+
+    const JSX = (
+        <div>
+        <h1>This is a block of JSX</h1>
+        <p>Here's a subtitle</p>
+            {/*JSX comment */}
+        </div>
+    );
+    
