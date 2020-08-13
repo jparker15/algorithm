@@ -467,3 +467,22 @@ const Camper = props =>{
 Camper.defaultProps = {name:"CamperBot"};
 
 Camper.propTypes = {name:PropTypes.string.isRequired};
+
+/**
+ *  Create a Stateful Component
+ */
+
+class StatefulComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    // initialize state here
+
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.name}</h1>
+      </div>
+    );
+  }
+};
