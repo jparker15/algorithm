@@ -443,8 +443,10 @@ class ResetPassword extends React.Component {
 
 /**
  * Review Using Props with Stateless Functional Components
+ * A stateless functional component is any function you write which accepts props and returns JSX.
+ * A stateless component, on the other hand, is a class that extends React.Component, but does not use internal state.
+ * Finally, a stateful component is a class component that does maintain its own internal state. 
  */
-
 class CampSite extends React.Component {
   constructor(props) {
     super(props);
@@ -458,15 +460,10 @@ class CampSite extends React.Component {
   }
 };
 // change code below this line
-
-const Camper = props => 
-  <p>{props.name}</p>
-
-
-Camper.defaultProps = {
-  name: "CamperBot"
+const Camper = props =>{
+  return (<p>{props.name}</p>) 
 }
 
-Camper.propTypes = {
-  name: PropTypes.string.isRequired
-}
+Camper.defaultProps = {name:"CamperBot"};
+
+Camper.propTypes = {name:PropTypes.string.isRequired};
