@@ -476,7 +476,9 @@ class StatefulComponent extends React.Component {
   constructor(props) {
     super(props);
     // initialize state here
-
+    this.state ={
+      name:"Jeremy"
+    }
   }
   render() {
     return (
@@ -486,3 +488,26 @@ class StatefulComponent extends React.Component {
     );
   }
 };
+
+/**
+ *  Render State in the User Interface
+ */
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'freeCodeCamp'
+    }
+  }
+  render() {
+    return (
+      <div>
+        { /* change code below this line */ }
+        <h1>{this.state.name}</h1>
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
