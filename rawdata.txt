@@ -1,0 +1,138 @@
+Rhode Island
+64
+Alabama
+1005
+Alaska
+64
+Arizona
+688
+Arkansas
+936
+Black Hawk
+1
+CA
+4
+California
+5552
+Colorado
+465
+Connecticut
+317
+DC
+3
+Delaware
+275
+Deleware
+3
+District of Columbia
+2018
+FL
+1
+Florida
+4221
+GA
+1
+Georgia
+8101
+Guam
+1
+Hawaii
+53
+Houston
+1
+Idaho
+37
+Illinois
+1989
+Indiana
+868
+Iowa
+42
+Kansas
+211
+Kentucky
+216
+Louisiana
+1209
+MD
+1
+Maine
+17
+Maryland
+4924
+Massachusetts
+1777
+Michigan
+1752
+Minnesota
+442
+Mississippi
+610
+Missouri
+856
+Montana
+10
+NC
+2
+NeVirginiada
+1
+Nebraska
+42
+Nevada
+220
+New Hampshire
+44
+New Jersey
+1453
+New Mexico
+49
+New York
+13205
+North Carolina
+2585
+North Dakota
+13
+Ohio
+1545
+Oklahoma
+213
+Ontario
+6
+Oregon
+554
+Pennsylvania
+1470
+Puerto Rico
+1
+South Californiarolina
+1
+South Carolina
+1081
+South Dakota
+4
+TX
+1
+Tennessee
+2672
+Texas
+9175
+United States Virgin Islands
+13
+Utah
+22
+Vermont
+11
+Virgin Islands
+1
+Virginia
+1323
+Washington
+2079
+Washington D.C
+1
+West Virginia
+2
+Wisconsin
+33
+Wyoming
+2
