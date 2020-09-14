@@ -9,8 +9,15 @@ You have to use the arguments object.} arr
  */
 
 function destroyer(arr) {
-    return arr;
+  
+  
+  
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);    
   }
+
+
+}
   
   destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 /**
