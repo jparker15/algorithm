@@ -4,4 +4,18 @@ function convertToF(celsius) {
     return fahrenheit;
   }
   console.log(convertToF(30));
+
+// reverse a string
+
+function reverseString(str) {
+
+        let rev = "";
+    for (let i = str.length; i >= 0; i--){
+        console.log(str[i])     
+    }
+
+    return console.log(rev);
+  }
+  
+  reverseString("hello");
   
