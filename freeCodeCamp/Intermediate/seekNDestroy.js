@@ -10,11 +10,14 @@ You have to use the arguments object.} arr
 
 function destroyer(arr) {
   
+  // console.log(arguments)
   
-  
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);    
+  let argumentArr = [];
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+    argumentArr.push(arguments[i])
   }
+  console.log(argumentArr);
 
 
 }
