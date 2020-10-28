@@ -12,6 +12,25 @@ Check the assertion tests for examples.} arr
  */
 
 function uniteUnique(arr) {
+
+
+    const args = Array.prototype.slice.call(arguments);
+
+    let uniqueVals = [];
+
+    // console.log(args);
+
+    for (let i = 0; i < args.length; i++) {
+      // console.log(args[i]);
+      for (let j = 0; j < args[i].length; j++) {
+        
+        console.log(args[i][j])
+        uniqueVals.push(args[i][j])
+      }
+      
+    }
+    console.log(uniqueVals);
+
     return arr;
   }
   
