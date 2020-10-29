@@ -13,13 +13,30 @@ function convertToF(celsius) {
 
 const reverseAString = (str)=>{
 
+  let empty = "";
 
-
-  for (let i = str.length; i >= 0; i--) {
+  for (let i = str.length - 1; i >= 0; i--) {
     
     console.log(str[i]);
+    empty += str[i]
     
   }
+  // console.log(empty);
 }
 
-reverseAString("suckers")
+reverseAString("Haliax")
+
+const factorialize = (num) =>{
+
+  let factor = 1;
+
+  for (let i = 1; i < num; i++) {
+    
+    factor *= num
+    
+  }
+  console.log(factor);
+
+}
+
+factorialize(5);
