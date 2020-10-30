@@ -24,7 +24,7 @@ const reverseAString = (str)=>{
   // console.log(empty);
 }
 
-reverseAString("Haliax")
+// reverseAString("Haliax")
 
 const factorialize = (num) =>{
 
@@ -39,10 +39,24 @@ const factorialize = (num) =>{
 
 }
 
-factorialize(5);
+// factorialize(5);
 
 const longestWord = (str) =>{
-  console.log(str);
+  str = str.split(" ");
+
+  let longest = ""
+  // console.log(longest.length);
+
+  // console.log(str.length);
+  for (let i = 0; i < str.length; i++) {
+    // console.log(str[i]);
+    if(str[i].length > longest.length){
+      longest = str[i];
+    }
+    
+  }
+  console.log(longest);
+  return longest.length;
 }
 
-longestWord("The quick brown fox jumped over the lazy dog");
+console.log(longestWord("The quick brown fox jumped over the lazy dog"));
