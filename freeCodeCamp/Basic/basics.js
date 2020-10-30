@@ -40,3 +40,9 @@ const factorialize = (num) =>{
 }
 
 factorialize(5);
+
+const longestWord = (str) =>{
+  console.log(str);
+}
+
+longestWord("The quick brown fox jumped over the lazy dog");
