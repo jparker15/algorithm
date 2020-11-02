@@ -59,11 +59,21 @@ const longestWord = (str) =>{
   return longest.length;
 }
 
-console.log(longestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
 const largestOfFour = (arr) => {
 
-  console.log(arr)
+  let largest = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
+    for (let j = 0; j < arr.length; j++) {
+      console.log(arr[i][j]);
+    }
+    
+  }
+  console.log(largest);
+
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
