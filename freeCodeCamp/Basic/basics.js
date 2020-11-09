@@ -63,22 +63,24 @@ const longestWord = (str) =>{
 
 const largestOfFour = (arr) => {
 
-  let largest = [0,0,0,0];
+  let values = [];
 
   for (let i = 0; i < arr.length; i++) {
     // console.log(arr[i]);
-    for (let j = 0; j < arr.length; j++) {
-      
-        if(arr[i][j] > largest[i]){
-          largest[i] = arr[i][j];
+    let larget = arr[i][0];
+    for (let j = 1; j < arr.length; j++) {
+
+
+
+        if(arr[i][j] > larget){
+          larget = arr[i][j];
         }
-        if (arr[i][j] < 0 || arr[i][j] > largest){
-          largest[i] = arr[i][j];
-        }
+       
     }
+    values[i] = larget;
     
   }
-  console.log(largest);
+  console.log(values);
 
 }
 
