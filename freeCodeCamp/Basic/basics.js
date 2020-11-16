@@ -88,19 +88,20 @@ const largestOfFour = (arr) => {
 
 
 const confirmEnding = (str,target) =>{
+  str = str.split(" ");
 
   for (let i = str.length - 1; i >= 0 ; i--) {
     console.log(str[i]);
-    if(str[i].includes(target)){
-      console.log("true");
-      return true
-    }
+    if(str[0].includes(target)){
+      
+      return console.log(true);
+    } 
+    return console.log(false);
     
   }
 
 
-  return str
+  
 }
 
-confirmEnding("Bastian", "n");
-
+confirmEnding("Open sesame", "same");
