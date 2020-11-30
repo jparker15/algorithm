@@ -94,9 +94,9 @@ const confirmEnding = (str,target) =>{
     console.log(str[i]);
     if(str[0].includes(target)){
       
-      return console.log(true);
+       console.log(true);
     } 
-    return console.log(false);
+     console.log(false);
     
   }
 
@@ -105,3 +105,16 @@ const confirmEnding = (str,target) =>{
 }
 
 confirmEnding("Open sesame", "same");
+
+const repeatString = (str,num) =>{
+    let empty = "";
+    let count = 0;
+    while(num > count){
+      count ++
+      empty + str;
+    }
+    return str;
+
+}
+
+repeatString("abc", 3);
