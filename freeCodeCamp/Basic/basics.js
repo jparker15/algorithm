@@ -118,3 +118,10 @@ const repeatString = (str,num) =>{
 }
 
 repeatString("abc", 3);
+
+const truncateStr = (str,num) =>{
+  console.log(str);
+
+}
+
+truncateStr("A-tisket a-tasket A green and yellow basket", 8);
