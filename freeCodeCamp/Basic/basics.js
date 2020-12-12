@@ -104,7 +104,7 @@ const confirmEnding = (str,target) =>{
   
 }
 
-confirmEnding("Open sesame", "same");
+// confirmEnding("Open sesame", "same");
 
 const repeatString = (str,num) =>{
     let empty = "";
@@ -117,10 +117,19 @@ const repeatString = (str,num) =>{
 
 }
 
-repeatString("abc", 3);
+// repeatString("abc", 3);
 
 const truncateStr = (str,num) =>{
-  console.log(str);
+
+  str = str.split(" ")
+
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+    if(str.length > num){
+      break;
+    }
+    
+  }
 
 }
 
