@@ -147,4 +147,11 @@ const findElement = (arr, func) => {
 
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
+const booWho = (bool) =>{
+  return bool;
+}
+
+booWho(null);
+
+
 
