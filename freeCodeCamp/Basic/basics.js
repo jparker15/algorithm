@@ -155,10 +155,16 @@ const booWho = (bool) =>{
   else {
     return false
   }
-  return bool;
+  
 }
 
 booWho(null);
+
+const titleCase = (str) =>{
+  return str;
+}
+
+titleCase("I'm a little tea pot");
 
 
 
