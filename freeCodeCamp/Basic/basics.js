@@ -161,6 +161,10 @@ const booWho = (bool) =>{
 booWho(null);
 
 const titleCase = (str) =>{
+  
+  let strings = str.split(" ");
+     
+  let empty = [];
   return str;
 }
 
