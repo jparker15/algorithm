@@ -165,6 +165,12 @@ const titleCase = (str) =>{
   let strings = str.split(" ");
      
   let empty = [];
+
+  for (let i = 0; i < strings.length; i++) {
+    let capital;
+
+    empty.push(capital);
+  }
   return str;
 }
 
