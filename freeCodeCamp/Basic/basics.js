@@ -178,5 +178,9 @@ const titleCase = (str) =>{
 
 titleCase("I'm a little tea pot");
 
+const sumFibs = (num) =>{
+  return num;
+}
 
+sumFibs(4);
 
