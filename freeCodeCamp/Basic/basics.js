@@ -179,6 +179,16 @@ const titleCase = (str) =>{
 titleCase("I'm a little tea pot");
 
 const sumFibs = (num) =>{
+
+  let prevNum = 0;
+  let currNum = 1;
+  let sum =0;
+
+  while( currNum <= num){
+    
+  }
+
+
   return num;
 }
 
