@@ -185,6 +185,11 @@ const sumFibs = (num) =>{
   let sum =0;
 
   while( currNum <= num){
+    if(currNum % 2 != 0){
+      currNum + sum;
+      console.log(sum);
+    }
+    prevNum++;
     
   }
 
