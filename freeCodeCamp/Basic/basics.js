@@ -211,3 +211,10 @@ const steamrollArray = (arr) =>{
 }
 
 steamrollArray([1, [2], [3, [[4]]]]);
+
+function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.random();
+}
