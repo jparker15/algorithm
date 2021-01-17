@@ -18,3 +18,17 @@ const reverseString = (str) => {
 }
 
 reverseString("hello");
+
+const factorialize = (num) => {
+
+  let factorial = 1;
+  for (let i = 1; i <= num; i++) {
+    factorial *= i;
+    console.log(factorial);
+  }
+  num = factorial;
+  console.log(num);
+  return num;
+}
+
+factorialize(5);
