@@ -1,6 +1,6 @@
 const convertToF = (celsius) =>{
   let fahrenheit = celsius * 9/5 + 32;
-  console.log(fahrenheit);
+  // console.log(fahrenheit);
   return fahrenheit;
 }
 
@@ -13,7 +13,7 @@ const reverseString = (str) => {
     revStr += str[i];
     
   }
-  console.log(revStr);
+  // console.log(revStr);
   return str;
 }
 
@@ -27,8 +27,30 @@ const factorialize = (num) => {
     console.log(factorial);
   }
   num = factorial;
-  console.log(num);
+  // console.log(num);
   return num;
 }
 
 factorialize(5);
+
+const findLongestWordLength = (str) => {
+
+  str = str.split(" ");
+
+  let longest = "";
+
+  for (let i = 0; i < str.length; i++) {
+    // console.log(str[i]);
+    if (str[i].length > longest.length){
+      longest = str[i];
+    }
+    
+  }
+  console.log(longest.length);
+
+  str = longest;
+
+  return str.length;
+}
+
+findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"); 
