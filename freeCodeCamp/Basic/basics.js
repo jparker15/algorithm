@@ -33,6 +33,29 @@ const factorialize = (num) => {
 
 factorialize(5);
 
+const findLongestWordLength = (str) => {
+
+  str = str.split(" ");
+
+  let longest = "";
+
+  for (let i = 0; i < str.length; i++) {
+    // console.log(str[i]);
+    if (str[i].length > longest.length){
+      longest = str[i];
+    }
+    
+  }
+  console.log(longest.length);
+
+  str = longest;
+
+  return str.length;
+}
+
+findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"); 
+
+
 const largestOfFour = (arr) => {
   // console.log(arr);
 
