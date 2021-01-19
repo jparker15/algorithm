@@ -1,6 +1,6 @@
 const convertToF = (celsius) =>{
   let fahrenheit = celsius * 9/5 + 32;
-  console.log(fahrenheit);
+  // console.log(fahrenheit);
   return fahrenheit;
 }
 
@@ -13,7 +13,7 @@ const reverseString = (str) => {
     revStr += str[i];
     
   }
-  console.log(revStr);
+  // console.log(revStr);
   return str;
 }
 
@@ -24,11 +24,22 @@ const factorialize = (num) => {
   let factorial = 1;
   for (let i = 1; i <= num; i++) {
     factorial *= i;
-    console.log(factorial);
+    // console.log(factorial);
   }
   num = factorial;
-  console.log(num);
+  // console.log(num);
   return num;
 }
 
 factorialize(5);
+
+const largestOfFour = (arr) => {
+  // console.log(arr);
+
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+  return arr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
