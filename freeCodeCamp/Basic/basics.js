@@ -63,15 +63,18 @@ const largestOfFour = (arr) => {
 
   for (let i = 0; i < arr.length; i++) {
     // console.log(arr[i]);
+    let largestNum = arr[i][0];
     for (let j = 0; j < arr.length; j++) {
       // console.log(arr[i][j]);
-      if(arr[i][j] > arr[i][0]){
-        largest[i] = arr[i][j];
+      if(arr[i][j] > largestNum){
+        largestNum = arr[i][j];
       }
       
     }
+    largest[i] = largestNum;
+    console.log(largest);
   }
-  console.log(largest);
+  
 
   return arr;
 }
