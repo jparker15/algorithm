@@ -46,7 +46,7 @@ const findLongestWordLength = (str) => {
     }
     
   }
-  console.log(longest.length);
+  // console.log(longest.length);
 
   str = longest;
 
@@ -72,7 +72,7 @@ const largestOfFour = (arr) => {
       
     }
     largest[i] = largestNum;
-    console.log(largest);
+    // console.log(largest);
   }
   
 
@@ -81,8 +81,20 @@ const largestOfFour = (arr) => {
 
 largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]);
 
+//Check if a string (first argument, str) ends with the given target string (second argument, target).
 const confirmEnding = (str, target) => {
+
+  let check = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i] , i, target[i]);
+    
+  }
+
   return str;
 }
 
-confirmEnding("Bastian", "n");A
+confirmEnding("Congratulation", "on");
