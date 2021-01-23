@@ -84,17 +84,15 @@ largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -1
 //Check if a string (first argument, str) ends with the given target string (second argument, target).
 const confirmEnding = (str, target) => {
 
-  let check = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    
-  }
+  // console.log(str.length, str.substring(12,14));
 
-  for (let i = 0; i < str.length; i++) {
-    console.log(str[i] , i, target[i]);
-    
+  if(str.substring(str.length - target.length,str.length) == target){
+    console.log(true);
+    return true
   }
-
-  return str;
+  console.log(false);
+  return false
+  
 }
 
-confirmEnding("Congratulation", "on");
+confirmEnding("He has to give me a new name", "name");
