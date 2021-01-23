@@ -87,18 +87,31 @@ const confirmEnding = (str, target) => {
   // console.log(str.length, str.substring(12,14));
 
   if(str.substring(str.length - target.length,str.length) == target){
-    console.log(true);
+    // console.log(true);
     return true
   }
-  console.log(false);
+  // console.log(false);
   return false
   
 }
 
 confirmEnding("He has to give me a new name", "name");
 
-function repeatStringNumTimes(str, num) {
+const repeatStringNumTimes = (str, num)=> {
+  let repeatStr = "";
+
+  for (let i = 0; i < num; i++) {
+    // console.log(str);
+    repeatStr += str;
+  }
+  // console.log(repeatStr);
+  if(num <= 0){
+    return str = "";
+  }
+
+  str = repeatStr;
+  // console.log(str, 0);
   return str;
 }
 
-repeatStringNumTimes("abc", 3);
+repeatStringNumTimes("*", 3);
