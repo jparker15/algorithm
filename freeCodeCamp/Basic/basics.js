@@ -96,3 +96,9 @@ const confirmEnding = (str, target) => {
 }
 
 confirmEnding("He has to give me a new name", "name");
+
+function repeatStringNumTimes(str, num) {
+  return str;
+}
+
+repeatStringNumTimes("abc", 3);
