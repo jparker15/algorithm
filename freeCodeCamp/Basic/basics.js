@@ -117,7 +117,14 @@ const repeatStringNumTimes = (str, num)=> {
 repeatStringNumTimes("*", 3);
 
 const truncateString = (str, num) => {
+  let trunc = "";
+  if (str.length > num){
+    trunc = str.slice(0,num);
+    console.log(trunc + "...");
+    str = trunc;
+  }
+  console.log(trunc);
   return str;
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString("A-",1);
