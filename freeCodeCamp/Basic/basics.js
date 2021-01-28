@@ -120,17 +120,22 @@ const truncateString = (str, num) => {
   let trunc;
   if (str.length > num){
     trunc = str.slice(0,num) + "...";
-    console.log(trunc);
+    // console.log(trunc);
     str = trunc;
   }
-  console.log(trunc, str);
+  // console.log(trunc, str);
   return str;
 }
 
 truncateString("A-",1);
 
-function findElement(arr, func) {
+const findElement = (arr, func)=> {
   let num = 0;
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    num = arr[i];
+  }
+  console.log(func);
   return num;
 }
 
