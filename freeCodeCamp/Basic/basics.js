@@ -19,6 +19,7 @@ const reverseString = (str) => {
 
 reverseString("hello");
 
+//Return the factorial of the provided integer.
 const factorialize = (num) => {
 
   let factorial = 1;
@@ -33,6 +34,7 @@ const factorialize = (num) => {
 
 factorialize(5);
 
+//Return the length of the longest word in the provided sentence.
 const findLongestWordLength = (str) => {
 
   str = str.split(" ");
@@ -55,7 +57,7 @@ const findLongestWordLength = (str) => {
 
 findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"); 
 
-
+//Return an array consisting of the largest number from each provided sub-array
 const largestOfFour = (arr) => {
   // console.log(arr);
 
@@ -97,6 +99,7 @@ const confirmEnding = (str, target) => {
 
 confirmEnding("He has to give me a new name", "name");
 
+//Repeat a given string str (first argument) for num times (second argument)
 const repeatStringNumTimes = (str, num)=> {
   let repeatStr = "";
 
@@ -116,6 +119,8 @@ const repeatStringNumTimes = (str, num)=> {
 
 repeatStringNumTimes("*", 3);
 
+//Truncate a string (first argument) if it is longer than the given maximum string length (second argument).
+// Return the truncated string with a ... ending.
 const truncateString = (str, num) => {
   let trunc;
   if (str.length > num){
@@ -141,8 +146,18 @@ const findElement = (arr, func)=> {
 
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
-function booWho(bool) {
-  return bool;
+//Check if a value is classified as a boolean primitive. Return true or false.
+const booWho = (bool) => {
+
+  // if (bool !== true || false){
+  //   return false;
+  // }
+  // if (bool === false){
+  //   console.log(true);
+  //   return true;
+  // }
+  
+  return typeof bool === "boolean";
 }
 
-booWho(null);
+booWho(false);
