@@ -137,10 +137,10 @@ truncateString("A-",1);
 const findElement = (arr, func)=> {
   let num = 0;
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    // console.log(arr[i]);
     num = arr[i];
   }
-  console.log(func);
+  // console.log(func);
   return num;
 }
 
@@ -163,7 +163,14 @@ const booWho = (bool) => {
 booWho(false);
 
 const titleCase = (str)  =>{
+  str = str.split(" ")
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+    let demo = str[i].substring(0,1).toUpperCase() + str[i].substring(1,str[i].length).toLowerCase();
+    console.log(demo);
+    
+  }
   return str;
 }
 
-titleCase("I'm a little tea pot");
+titleCase("sHoRt AnD sToUt");
