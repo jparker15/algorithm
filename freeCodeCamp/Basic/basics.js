@@ -163,13 +163,16 @@ const booWho = (bool) => {
 booWho(false);
 
 const titleCase = (str)  =>{
-  str = str.split(" ")
+  str = str.split(" ");
+  let newStr = ""
   for (let i = 0; i < str.length; i++) {
     console.log(str[i]);
     let demo = str[i].substring(0,1).toUpperCase() + str[i].substring(1,str[i].length).toLowerCase();
+    newStr += demo + " ";
     console.log(demo);
     
   }
+  console.log(newStr);
   return str;
 }
 
