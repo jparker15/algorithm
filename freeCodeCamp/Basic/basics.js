@@ -203,3 +203,13 @@ const getIndexToIns = (arr, num) =>{
 }
 
 getIndexToIns([40, 60], 50);
+
+
+/**Return true if the string in the first element of the array
+ * contains all of the letters of the string in the second element of the array.
+ * */
+const mutation = (arr)=> {
+  return arr;
+}
+
+mutation(["hello", "hey"]);
