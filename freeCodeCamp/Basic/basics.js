@@ -184,10 +184,16 @@ Begin inserting elements at index n of the second array.
 Return the resulting array. The input arrays should remain the same after the function runs.
  */
 const frankenSplice = (arr1, arr2, n) => {
+
+  let newArr = [];
+
+  // newArr.push(arr2);
+  // console.log(newArr);
   for (let i = 0; i < arr1.length; i++) {
-    arr2.push(arr1[i]);
+    newArr.slice(arr2[i]);
     
   }
+  console.log(newArr);
   return arr2;
 }
 
