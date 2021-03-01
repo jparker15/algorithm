@@ -166,13 +166,13 @@ const titleCase = (str)  =>{
   str = str.split(" ");
   let newStr = ""
   for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
+    // console.log(str[i]);
     let demo = str[i].substring(0,1).toUpperCase() + str[i].substring(1,str[i].length).toLowerCase();
     newStr += demo + " ";
-    console.log(demo);
+    // console.log(demo);
     
   }
-  console.log(newStr);
+  // console.log(newStr);
   return str;
 }
 
@@ -193,7 +193,7 @@ const frankenSplice = (arr1, arr2, n) => {
     newArr.slice(arr2[i]);
     
   }
-  console.log(newArr);
+  // console.log(newArr);
   return arr2;
 }
 
@@ -205,6 +205,13 @@ Falsy values in JavaScript are false, null, 0, "",
  undefined, and NaN. */
 
 const bouncer = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
+    if(typeof arr[i] === "boolean"){
+      console.log(arr[i]);
+    }
+    
+  }
   return arr;
 }
 
