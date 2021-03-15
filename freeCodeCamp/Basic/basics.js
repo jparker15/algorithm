@@ -166,13 +166,13 @@ const titleCase = (str)  =>{
   str = str.split(" ");
   let newStr = ""
   for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
+    // console.log(str[i]);
     let demo = str[i].substring(0,1).toUpperCase() + str[i].substring(1,str[i].length).toLowerCase();
     newStr += demo + " ";
-    console.log(demo);
+    // console.log(demo);
     
   }
-  console.log(newStr);
+  // console.log(newStr);
   return str;
 }
 
@@ -184,12 +184,34 @@ Begin inserting elements at index n of the second array.
 Return the resulting array. The input arrays should remain the same after the function runs.
  */
 const frankenSplice = (arr1, arr2, n) => {
+
+  let newArr = [];
+
+  // newArr.push(arr2);
+  // console.log(newArr);
+  for (let i = 0; i < arr1.length; i++) {
+    newArr.slice(arr2[i]);
+    
+  }
+  // console.log(newArr);
   return arr2;
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
+/**Remove all falsy values from an array.
+
+Falsy values in JavaScript are false, null, 0, "",
+ undefined, and NaN. */
+
 const bouncer = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
+    if(typeof arr[i] === "boolean"){
+      console.log(arr[i]);
+    }
+    
+  }
   return arr;
 }
 
@@ -213,8 +235,9 @@ const mutation = (arr)=> {
 }
 
 mutation(["hello", "hey"]);
-
-function chunkArrayInGroups(arr, size) {
+/**Write a function that splits an array (first argument) into groups the length of size
+ * (second argument) and returns them as a two-dimensional array. */
+const chunkArrayInGroups = (arr, size) =>{
   return arr;
 }
 
