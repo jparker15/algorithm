@@ -219,3 +219,9 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+function fearNotLetter(str) {
+  return str;
+}
+
+fearNotLetter("abce");a
