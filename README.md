@@ -1,10 +1,10 @@
-A repo containing algorithms
+A repo containing Java algorithms 
 
-Completed
+## Completed
 
-In Progress
+## In Progress
 
-Command Line Interface Algorithms - 
+### Command Line Interface Algorithms - 
 
 Folder containing algorithms with a readline interface to allow inputs
 
